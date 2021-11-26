@@ -1,8 +1,7 @@
-local file = vim.fn.expand("%:p")
+local file = vim.fn.expand("%")
 
 local commands = {
   -- ["filetype"] = "command" .. current_file_path,
-  -- ["lua"] = "lua " .. file,
   ["lua"] = "lua " .. file,
   ["python"] = "python " .. file,
   ["sh"] = ". " .. file,
@@ -13,11 +12,9 @@ local commands = {
   ["html"] = "xdg-open " ..  file,
   ["css"] = "",
   ["javascript"] = "js78 " .. file,
-  ["java"] = "javac " .. file .. "&& java App ", -- main class has to be named "App"
-  ["kotlin"] = "js78 " .. file,
-  ["cs"] = "js78 " .. file,
-  ["vim"] = "",
-  [""] = ""
+  ["java"] = "javac " .. file .. " && java App", -- main class has to be named "App"
+  --["kotlin"] = "kotlin " .. file,
+  --["cs"] = "mono " .. file,
 }
 
 return commands
