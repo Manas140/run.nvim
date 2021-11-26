@@ -37,4 +37,5 @@ use 'Manas140/run.nvim'
  - html    - rust  - sh
  - js      - lua   - go
  - python  - c     - cpp
+-java (main class has to be named "App")
 ```
