@@ -3,24 +3,23 @@
 
 <p align="center">
     <a href="https://github.com/Manas140/run.nvim/stargazers"><img src="https://img.shields.io/github/stars/Manas140/run.nvim?colorA=151515&colorB=6A9FB5&style=for-the-badge&logo=starship"></a>
-    <a href="https://github.com/Manas140/run.nvim/issues"><img src="https://img.shields.io/github/issues/Manas140/run.nvim?colorA=151515&colorB=F4BF75&style=for-the-badge&logo=bugatti"></a>
-    <a href="https://github.com/Manas140/run.nvim/network/members"><img src="https://img.shields.io/github/forks/Manas140/run.nvim?colorA=151515&colorB=788C4C&style=for-the-badge&logo=github"></a>
+    <a href="https://github.com/Manas140/run.nvim/issues"><img src="https://img.shields.io/github/issues/Manas140/run.nvim?colorA=151515&colorB=90A959&style=for-the-badge&logo=bugatti"></a>
+    <a href="https://github.com/Manas140/run.nvim/network/members"><img src="https://img.shields.io/github/forks/Manas140/run.nvim?colorA=151515&colorB=AC4142&style=for-the-badge&logo=github"></a>
 </p>
-
 
 <p>
   <img src="preview.png">
 </p>
 
 
-## Instalation
+## Installation
 
 ### Packer
 ```lua
 use 'Manas140/run.nvim'
 ```
 
-### Manual Instalation
+### Manual Installation
 ```sh
   git clone https://github.com/Manas140/run.nvim && cd run.nvim
   nvim --cmd "set rtp+=."
@@ -29,7 +28,7 @@ use 'Manas140/run.nvim'
 ## Execute The Plugin
 ```
   Keybind - Control + E
-  Command - :call Run()
+  Command - :Run
 ```
 
 ## Supports
@@ -37,5 +36,5 @@ use 'Manas140/run.nvim'
  - html    - rust  - sh
  - js      - lua   - go
  - python  - c     - cpp
--java (main class has to be named "App")
+ - java (main class has to be named "App")
 ```
