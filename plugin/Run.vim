@@ -3,7 +3,8 @@ fun! Run()
   lua require("Run").main()
 endfun
 
-nmap <C-E> :call Run()<CR>
+com! Run call Run()
+nmap <C-E> :Run<CR>
 
 augroup Run
   autocmd!
