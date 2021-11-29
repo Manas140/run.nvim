@@ -1,4 +1,5 @@
 local file = vim.fn.expand("%")
+local fileWithoutExt = vim.fn.expand("%:t:r")
 
 local commands = {
   -- ["filetype"] = "command" .. current_file_path,
@@ -12,7 +13,7 @@ local commands = {
   ["html"] = "xdg-open " ..  file,
   ["css"] = "",
   ["javascript"] = "js78 " .. file,
-  ["java"] = "javac " .. file .. " && java App", -- main class has to be named "App"
+  ["java"] = "javac " .. file .. "&& java " .. fileWithoutExt,
   --["kotlin"] = "kotlin " .. file,
   --["cs"] = "mono " .. file,
 }
