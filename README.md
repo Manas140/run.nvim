@@ -33,8 +33,9 @@ use 'Manas140/run.nvim'
 
 ## Supports
 ```
- - html    - rust  - sh
- - js      - lua   - go
- - python  - c     - cpp
- - java
+ - c       - cpp      - dart
+ - go      - html     - java
+ - js      - lua      - perl
+ - php     - python   - r
+ - rust    - sh       - swift
 ```
