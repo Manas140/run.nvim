@@ -15,11 +15,11 @@ local commands = {
   ["php"] = "php " .. path,
   ["python"] = "python " .. path,
   ["r"] = "Rscript " .. path,
-  ["rust"] = "cd " .. dir .. " && rust build " .. path .. " ",
+  ["rust"] = "cd " .. dir .. " && rustc " .. path .. " && ./" .. name,
+  ["cargo"] = "cd " .. dir .. " && cargo run",
   ["sh"] = ". " .. path,
   ["swift"] = "swift " .. path,
-  --["kotlin"] = "kotlin " .. path,
-  --["cs"] = "mono " .. path,
+  ["png"] = "xdg-open " .. path,
 }
 
 return commands
