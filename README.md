@@ -27,7 +27,7 @@ Plug 'Manas140/run.nvim'
 
 ## Configuration 
 
-- Default 
+- Use Default 
 
 ```lua 
 require('run').setup()
@@ -37,12 +37,23 @@ require('run').setup()
 
 ```lua 
 require("run").setup {
-  border = "[none|single|double|rounded|solid|shadow]",
-  gap = [0.1-0.9]
+  ui = {
+    border = "[none|single|double|rounded|solid|shadow]",
+    gap = [0.1-0.9],
+  },
+  cmd = {
+    -- variables, $path for entire path, $dir for current dir, $name for name without extention
+    filetype = "command $path $dir $name",
+  },
 }
 ```
 
-## Execute The Plugin
+## Usage 
+
 ```
 :Run
 ```
+
+## References
+
+- [vscode-code-runner](https://github.com/formulahendry/vscode-code-runner)
