@@ -2,8 +2,10 @@ local config = {}
 
 config = {
   ui = {
+    gap = 0.3,
     border = "rounded",
-    gap = 0.2
+    border_cl = "Comment",
+    bg = "Normal",
   },
   cmd = {
     c = "cd $dir && gcc $path && ./a.out",

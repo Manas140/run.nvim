@@ -1,0 +1,65 @@
+*run.nvim*
+
+run.nvim - snazzy floating window for file/script execution
+Author: Manas140 manas140@protonmail.com
+Homepage: github.com/manas140/run.nvim 
+License: MIT
+
+==============================================================================
+|Introduction|                                              *run-introduction*
+
+A plugin to run the current file/script in a snazzy floating window for 
+neovim written in lua.
+
+==============================================================================
+|Usage|                                                            *run-usage*
+
+Run.nvim provides just one command |:Run|
+
+*:Run*
+
+|:Run| will execute a command depending on the current file type, and if the 
+command for the particular file is not available it would just open a terminal.
+
+==============================================================================
+|Settings|                                                      *run-settings*
+
+require("run").setup {
+  ui = {
+    border = "[none/single/double/rounded/solid/shadow]",
+    gap = [0.1-0.9],
+    border_cl = "Comment",
+    bg = "Normal",
+  },
+  cmd = {
+    filetype = "command cmd_var",
+  },
+}
+
+|cmd_var:| Variables to be used, starts with '$'
+         - $path: entire path 
+         - $dir: current dir
+         - $name: file name without extention
+
+|border:| Types of border around the floating window:  
+        - none: no border
+        - single: single border
+        - double: double border  
+        - rounded: rounded single border
+        - solid: solid color
+        - shadow: shadow as border
+
+|border_cl:| Highlight for border
+
+|bg:| Background hightlight
+
+|gap:| Gap around the floating window:
+     - from 0.1 to 0.9 
+
+==============================================================================
+|Issues|                                                          *run-issues*
+
+Report any issues you face with this plugin at: 
+*https://github.com/manas140/run.nvim/issues*
+
+------------------------------------------------------------------------------
