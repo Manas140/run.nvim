@@ -19,6 +19,17 @@
 use 'Manas140/run.nvim'
 ```
 
+- Lazy 
+
+```lua
+  {
+    dir='~/Projects/run.nvim',
+    config = function ()
+      require('run').setup()
+    end
+  }
+```
+
 - Vim Plug 
 
 ```lua 
@@ -38,8 +49,10 @@ require('run').setup()
 ```lua 
 require("run").setup {
   ui = {
-    border = "[none|single|double|rounded|solid|shadow]",
     gap = [0.1-0.9],
+    border = "[none|single|double|rounded|solid|shadow]",
+    border_cl = "Comment", -- provide a highlight 
+    bg = "Normal", -- provide a highlight
   },
   cmd = {
     -- variables, $path for entire path, $dir for current dir, $name for name without extention
